@@ -90,7 +90,7 @@ Now, we will edit a Quarto document and render it using R Studio.
 
 ## Scrollytelling
 
-For web-based presentation.
+For web-based presentations.
 
 ::: {style="text-align: center; margin-top: 1em"}
 [Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){preview-link="true" style="text-align: center"}
@@ -106,7 +106,7 @@ Leveraging the power of maps to contextualize data.
 
 ## Customized stories
 
-Put the readers in the center of your narrative. Useful for comparing host and migrants, for instance.
+Put the readers in the center of your narrative. Useful for comparing hosts and migrants, for instance.
 
 ::: {style="text-align: center; margin-top: 1em"}
 [Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child)
