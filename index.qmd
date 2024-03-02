@@ -12,7 +12,7 @@ format:
     logo: img/jdc-logo.png
     footer: Joint Data Center on Forced Displacement
 ---
-# Overview
+## Overview
 
 - What is Quarto?
 
@@ -26,7 +26,7 @@ format:
 
 The state-of-the-art of open-source solutions for publishing data-driven documents.
 
-Easily combine text, code, image, dynamic charts and more.
+Easily combine text, code, images, dynamic charts and more.
 
 Go from plain text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 
@@ -112,7 +112,7 @@ Put the readers in the center of your narrative. Useful for comparing hosts and 
 [Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child)
 :::
 
-# Want to know more?
+## Want to know more?
 
 Drop me a message on Teams or reach me via email.
 
