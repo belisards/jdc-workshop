@@ -12,6 +12,7 @@ format:
     logo: img/jdc-logo.png
     footer: Joint Data Center on Forced Displacement
 ---
+
 ## Overview
 
 - What is Quarto?
