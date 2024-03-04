@@ -78,8 +78,9 @@ Let's edit a Quarto document and render it using R Studio.
 ## Scrollytelling
 
 For web-based presentations.
-
-[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full)
+::: {style="text-align: center; margin-top: 1em"}
+[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){:target="_blank"}
+:::
 
 ## Geo-based narratives
 
@@ -87,14 +88,14 @@ Leveraging the power of maps to contextualize data.
 
 ::: {style="text-align: center; margin-top: 1em"}
 [Expulsions - forced displacements in the Ecuadorian Amazonia](https://documental.xyz/expulsions)
-:::
+:::{preview-link="true"}
 
 ## Customized stories
 
 Put the readers in the center of your narrative. Useful for comparing hosts and migrants, for instance.
 
 ::: {style="text-align: center; margin-top: 1em"}
-[Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child)
+[Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child){preview-link="true"}
 :::
 
 ## Want to know more?
