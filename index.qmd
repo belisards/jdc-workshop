@@ -45,7 +45,7 @@ Let's see Quarto's main features on its website.
 
 ---
 
-![Example of Quarto text](img/quarto_text.png)
+![Example of a Quarto document](img/quarto_text.png)
 
 ## Some use cases scenarios
 
@@ -85,6 +85,7 @@ Let's edit a Quarto document and render it using R Studio.
 ## Scrollytelling
 
 For web-based presentations.
+
 ::: {style="text-align: center; margin-top: 1em"}
 [Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){:target="_blank"}
 :::
@@ -93,27 +94,27 @@ For web-based presentations.
 
 Leveraging the power of maps to contextualize data.
 
-::: {style="text-align: center; margin-top: 1em"}
+::: {style="text-align: center; margin-top: 1em" preview-link="true"}
 [Expulsions - forced displacements in the Ecuadorian Amazonia](https://documental.xyz/expulsions)
-:::{preview-link="true"}
+:::
 
 ## Customized stories
 
 Put the readers in the center of your narrative. Useful for comparing hosts and migrants, for instance.
 
-::: {style="text-align: center; margin-top: 1em"}
+::: {style="text-align: center; margin-top: 1em" preview-link="true"}
 [Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child){preview-link="true"}
 :::
 
 ## Extra resources
 
-- Boilerplate code to create Quarto presentations [https://github.com/belisards/quarto_presentation/](https://github.com/belisards/quarto_presentation/)
+Boilerplate code to create Quarto presentations [https://github.com/belisards/quarto_presentation/](https://github.com/belisards/quarto_presentation/)
 
-- Quarto website: [https://quarto.org](https://quarto.org)
+Quarto website: [https://quarto.org](https://quarto.org)
 
-- Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
 
-- Code of this presentation: [https://github.com/belisards/jdc-workshop](https://github.com/belisards/jdc-workshop)
+Code of this presentation: [https://github.com/belisards/jdc-workshop](https://github.com/belisards/jdc-workshop)
 
 
 ## Want to know more?
