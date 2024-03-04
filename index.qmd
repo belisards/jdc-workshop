@@ -14,7 +14,7 @@ format:
 ---
 ## Overview
 
-- What is Quarto?
+- Introduction to Quarto
 
 - Hands-on exercise with Quarto and Github
 
