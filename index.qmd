@@ -30,13 +30,15 @@ Easily combine text, code, images, dynamic charts and more.
 
 Go from plain text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 
-## How does it look?
+# How does it look?
 
 Let's see Quarto's main features on its website.
 
 ::: {style="text-align: center; margin-top: 1em"}
 [https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
 :::
+
+##  {background="#43464B" background-image="images/quarto-text.png"}
 
 ## Some use cases scenarios
 
@@ -58,27 +60,12 @@ Render to single files, such as PDF, DOCX and PPT, or use a web-based service to
 
 Github, RPubs Posit (former R Studio Cloud) are common web-based alternatives. 
 
+
 # Hands-on exercise
 
-## Quarto presentation
-
-First, let's just review how a Quarto document is structured.
-
-1. Visit the GitHub repository [https://github.com/belisards/workshop-jdc](https://github.com/belisards/workshop-jdc)
-
-2. Click on the file `index.qmd`
-
-3. What are your thoughts on this code? Can you intuitively understand how it works? 
-         
-## Quarto website
-
-Now, we will edit a Quarto document and render it using R Studio.
-
-1. Visit the GitHub repository [https://github.com/belisards/tutorial-ven-migration](https://github.com/belisards/tutorial-ven-migration)
-2. Click on the file `index.qmd`
-3. Is this code similar to the Quarto document for this presentation? Can you spot how R code are integrated in this document?
-
 ## Editing a Quarto document
+
+Let's edit a Quarto document and render it using R Studio.
 
 1. Clone the [Github repository](https://github.com/belisards/tutorial-ven-migration) to your local machine
 2. In R Studio: click on "File", then "Open Project" and locate the project
