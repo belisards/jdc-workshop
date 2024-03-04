@@ -12,6 +12,7 @@ format:
     logo: img/jdc-logo.png
     footer: Joint Data Center on Forced Displacement
 ---
+
 ## Overview
 
 - Introduction to Quarto
@@ -19,6 +20,10 @@ format:
 - Hands-on exercise with Quarto and Github
 
 - A glimpse of other data-driven publication formats
+
+::: footer
+Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+:::
 
 # What is Quarto?
 
@@ -97,6 +102,17 @@ Put the readers in the center of your narrative. Useful for comparing hosts and 
 ::: {style="text-align: center; margin-top: 1em"}
 [Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child){preview-link="true"}
 :::
+
+## Extra resources
+
+- Boilerplate code to create Quarto presentations [https://github.com/belisards/quarto_presentation/](https://github.com/belisards/quarto_presentation/)
+
+- Quarto website: [https://quarto.org](https://quarto.org)
+
+- Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+
+- Code of this presentation: [https://github.com/belisards/jdc-workshop](https://github.com/belisards/jdc-workshop)
+
 
 ## Want to know more?
 
