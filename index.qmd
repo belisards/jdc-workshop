@@ -43,7 +43,7 @@ Let's see Quarto's main features on its website.
 [https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
 :::
 
-##  {background="#43464B" background-image="img/quarto-text.png"}
+##  {background-image="img/quarto-text.png"}
 
 ## Some use cases scenarios
 
@@ -57,7 +57,7 @@ Let's see Quarto's main features on its website.
 
 - Create a website for technical documentation
 
-## Working with Quarto documents
+## Working with Quarto
 
 Edit Quarto documents using R Studio, Jupyter Notebooks or VS Code.
 
