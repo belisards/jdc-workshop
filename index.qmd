@@ -87,7 +87,7 @@ Let's edit a Quarto document and render it using R Studio.
 For web-based presentations.
 
 ::: {style="text-align: center; margin-top: 1em"}
-[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){:target="_blank"}
+[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){target="_blank"}
 :::
 
 ## Geo-based narratives
