@@ -43,7 +43,9 @@ Let's see Quarto's main features on its website.
 [https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
 :::
 
-##  {background-image="img/quarto-text.png"}
+---
+
+![Example of Quarto text](img/quarto_text.png)
 
 ## Some use cases scenarios
 
