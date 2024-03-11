@@ -3,7 +3,7 @@ title: "Solutions for data-driven publications"
 author: "Adriano Belisario"
 format:
   revealjs: 
-    theme: simple
+    theme: moon
     incremental: true
     slide-number: true
     chalkboard: 
