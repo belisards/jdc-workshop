@@ -115,6 +115,8 @@ Difficult to track how users interact with a PDF
 
 **World Health Organization**: data and code for the [Global tuberculosis report 2024](https://github.com/GTB-TME/gtbreport2024)
 
+**JDC (WIP)**: [web-based/micro-site report template](https://github.com/jointdatacenter/report-template) 
+
 # Version control with Git {.slide-blue .jdc-background}
 
 ## What is Git?
