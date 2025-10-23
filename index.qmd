@@ -6,6 +6,9 @@ format:
     toc: true
     toc-depth: 1
     incremental: true
+    slide-number: c/t
+    show-slide-number: all
+    embed-resources: true
     navigation-mode: linear
 ---
 
