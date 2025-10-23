@@ -157,9 +157,34 @@ $presentation-h1-font-size: 2.2em !default;
 
 // Slide with background image
 .jdc-background .slide-background-content {
-  background-image: url('../../../../../_extensions/jdc/background.png') !important;
+  background-image: url('../../../../../_extensions/jointdatacenter/jdc/background.png') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   opacity: 0.15 !important;
+}
+
+// Make title area transparent for background visibility
+.jdc-background {
+  .slide-background {
+    opacity: 1 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .reveal .slides section {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+// Remove any background from section headers
+.reveal .slides section.jdc-background {
+  background: transparent !important;
+  background-color: transparent !important;
 }

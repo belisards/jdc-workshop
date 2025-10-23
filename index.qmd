@@ -1,6 +1,6 @@
 ---
-title: Branded documents and version control
-subtitle: Quarto & Git
+title: Building and versioning reproducible branded documents
+subtitle: With Quarto and Git
 format:
   jdc-revealjs:
     toc: true
@@ -9,29 +9,31 @@ format:
     navigation-mode: linear
 ---
 
-# Current challenges {.slide-blue}
+# Current challenges {.slide-blue .jdc-background}
 
 ## Who has experienced...
 
 - Opening multiple email attachments to find the "right" version of a report?
 
-- Seeing filenames like: `Report_Final_v3_FINAL_Jan_revised_ACTUAL.docx`?
+- Seeing filenames like: `Report_Final_v3_FINAL_Jan_revised.docx`?
 
 - Being unable to answer "where did this number come from?"?
 
-- Spending hours reformatting a report to match brand standards?
+- Spending hours reformatting a report to match JDC standards?
 
-::: {.notes}
-How common are these challenges?
+- Manually merging changes from different offline edits?
 
-How do you handle them?
+## Questions 
 
-What do you think could be done to avoid such situations?
-:::
+- How common are these challenges?
+
+- How do you handle them?
+
+- What do you think could be done to avoid such situations?
 
 ## Messy version control systems
 
-- Multiple copies across email, shared drives, etc.
+- Multiple copies across email, shared folders, etc.
 
 - No centralized tracking of changes 
 
@@ -57,7 +59,7 @@ What do you think could be done to avoid such situations?
 
 ::::
  
-## Formatting chaos
+## Formatting burden
 
 - Lack of visual consistency
 
@@ -65,7 +67,55 @@ What do you think could be done to avoid such situations?
 
 - Brand dilution and diminished institutional recognition
 
-# Version control with Git {.slide-blue}
+## Problems with PDF on the web
+
+Why publishing reports (only) as PDFs isn’t a good idea:
+
+- Poor visibility in search engines
+
+- Low accessibility (e.g. mobile devices and screen readers)
+
+- Difficult to update
+
+- Data can’t be reused
+
+- Limited analytics
+ 
+::: {.notes}
+Hard to read on mobile devices; Screen readers often fail to interpret content correctly; Text may be embedded in images, not real text
+
+PDFs are less indexed by search engines; ; Harder for users to find or share specific information
+
+Static files — must re-upload for every correction; 
+
+Tables and charts aren’t easily extractable; Limits data sharing
+
+Difficult to track how users interact with a PDF
+:::
+
+## Advantages of web-first reports
+
+- Broader reach and engagement: improved visibility in search engines and increased audience interaction
+
+- Improved analytics: better understanding of audience reach (e.g., Google Analytics)
+
+- Continuous updates: content can be refreshed and versioned using Git
+
+- Interactive content: richer experience with interactive data visualizations
+
+- Exportable as PDF for printing if needed
+
+# Use cases {.slide-blue .jdc-background}
+
+**World Bank**: [Reproducible Research Repository](https://github.com/worldbank/wb-reproducible-research-repository)
+
+**UNHCR**: Quarto templates for [web documents](https://github.com/unhcr-dataviz/quarto-html-unhcr) and [presentations](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr)
+
+**OECD**: data and code for the [States of Fragility report](https://github.com/hdesaioecd/oecd-sfr-2020-master-public)
+
+**World Health Organization**: data and code for the [Global tuberculosis report 2024](https://github.com/GTB-TME/gtbreport2024)
+
+# Version control with Git {.slide-blue .jdc-background}
 
 ## What is Git?
 
@@ -84,6 +134,54 @@ Git provides three powerful features:
 - An audit log of every change
 
 - A collaboration system so multiple people can work simultaneously without conflicts
+
+## Pro and cons
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+✅ 
+
+- Complete version history
+
+- Distributed backup
+
+- Safer offline collaboration
+
+:::
+
+::: {.column width="50%"}
+
+⚠️ 
+
+- New workflow = steep learning curve for newcomers
+
+- Async workflow
+
+- Resolving merge conflicts can be difficult
+
+:::
+
+::::
+
+::: {.notes}
+
+Clear version history – complete record of all edits, making it easy to track what changed, when, and by whom.
+
+Safer offline collaboration – Multiple contributors can work on the same report or website offline.
+
+VS
+
+Steep learning curve for newcomers – Non-technical users may find concepts like commits, branches, and merges unintuitive at first.
+
+No real-time collaboration - Not like Google Docs; async workflow only
+
+Conflicts - Dealing with merging conflicts can be difficult for non-technical users if multiple users edit the same part of the text offline
+
+Overkill for simple reports - May be too complex for solo writers
+
+:::
 
 ## Key concepts
 
@@ -109,7 +207,7 @@ Branches are parallel copies of a project used to test ideas without affecting t
 
 :::
 
-# Creating documents with Quarto {.slide-blue}
+# Creating documents with Quarto {.slide-blue .jdc-background}
 
 ## Quick review
 
@@ -121,32 +219,35 @@ Quarto separates content from formatting.
 
 Go from plain-text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 
-## Advantages and challenges
+## Pro and cons
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-✅ Pros
+✅ 
 
-- Professional, consistent output
+- Easy to edit and reuse elements
 
-- Dynamic updates
+- Multiple output formats from the same source
 
-- Transparency and reproducibility
+- Embedded code and results
 
+- Automatic formatting/numbering for figures, tables, references etc
 
 :::
 
 ::: {.column width="50%"}
 
-⚠️ Cons
+⚠️ 
 
 - Learning curve
 
 - No WYSIWYG editing
 
-- Dependency on technical setup
+- Requires technical knowledge to set up or for complex customizations
+
+- Debugging complexity
 
 :::
 
@@ -166,7 +267,7 @@ Learning curve – Non-technical users may find the markdown syntax and project 
 
 Limited WYSIWYG editing – no drag-and-drop or visual layout interface like Word or PowerPoint.
 
-Dependency on technical setup – Rendering documents requires installing Quarto and sometimes R or Python.
+Users don't work with standard softwares for text editing (like Word)
 
 :::
 
@@ -174,15 +275,9 @@ Dependency on technical setup – Rendering documents requires installing Quarto
 
 ## What is a Quarto template?
 
-- A **starter** that sets up a project structure, configuration file (`_quarto.yml`), theme, and example content
+A **starter kit** that sets up a project structure, configuration file, theme, and placeholder content.
 
-- Ensures **brand consistency** and **repeatable** outputs (HTML, PDF, MS PowerPoint, etc.)
-
-## Examples from UNHCR 
-
-- [Web documents](https://github.com/unhcr-dataviz/quarto-html-unhcr)
-
-- [Slides](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr)
+Ensures **brand consistency** and **repeatable** outputs (HTML, PDF, MS PowerPoint, etc.)
 
 ## Hands-on showcase 
 
