@@ -1,0 +1,124 @@
+---
+title: "Solutions for data-driven publications"
+author: "Adriano Belisario"
+format:
+  revealjs: 
+    theme: moon
+    incremental: true
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: img/jdc-logo.png
+    footer: Joint Data Center on Forced Displacement
+---
+
+## Overview
+
+- Introduction to Quarto
+
+- Hands-on exercise with Quarto and Github
+
+- A glimpse of other data-driven publication formats
+
+::: footer
+Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+:::
+
+# What is Quarto?
+
+## Quarto 
+
+The state-of-the-art of open-source solutions for publishing data-driven documents.
+
+Easily combine text, code, images, dynamic charts and more.
+
+Go from plain text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+
+# How does it look?
+
+Let's see Quarto's main features on its website.
+
+::: {style="text-align: center; margin-top: 1em"}
+[https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
+:::
+
+---
+
+![Example of a Quarto document](img/quarto_text.png)
+
+## Some use cases scenarios
+
+- Create reproducible reports for others (and for yourself!)
+
+- Combine with Github to write data analysis reports collaboratively
+
+- Automate the publication of periodic reports using data that changes over time
+
+- Create a report template and automate its application across different data sources
+
+- Create a website for technical documentation
+
+## Working with Quarto
+
+Edit Quarto documents using R Studio, Jupyter Notebooks or VS Code.
+
+Render to single files, such as PDF, DOCX and PPT, or use a web-based service to publish Quarto documents.
+
+Github, RPubs Posit (former R Studio Cloud) are common web-based alternatives. 
+
+
+# Hands-on exercise
+
+## Editing a Quarto document
+
+Let's edit a Quarto document and render it using R Studio.
+
+1. Clone the [Github repository](https://github.com/belisards/tutorial-ven-migration) to your local machine
+2. In R Studio: click on "File", then "Open Project" and locate the project
+3. Render the project
+3. Change the data source (line 69) for: `peru_host_mig.csv` or `chile_host_mig.csv` and render the project again
+4. Notice how the text rendered automatically changes 
+
+# Other data-driven publication formats
+
+## Scrollytelling
+
+For web-based presentations.
+
+::: {style="text-align: center; margin-top: 1em"}
+[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){target="_blank"}
+:::
+
+## Geo-based narratives
+
+Leveraging the power of maps to contextualize data.
+
+::: {style="text-align: center; margin-top: 1em" preview-link="true"}
+[Expulsions - forced displacements in the Ecuadorian Amazonia](https://documental.xyz/expulsions)
+:::
+
+## Customized stories
+
+Put the readers in the center of your narrative. 
+
+::: {style="text-align: center; margin-top: 1em" preview-link="true"}
+[Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child){preview-link="true"}
+:::
+
+## Extra resources
+
+Boilerplate code to create Quarto presentations: [https://github.com/belisards/quarto_presentation/](https://github.com/belisards/quarto_presentation/)
+
+Quarto website: [https://quarto.org](https://quarto.org)
+
+Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+
+Code of this presentation: [https://github.com/belisards/jdc-workshop](https://github.com/belisards/jdc-workshop)
+
+
+## Want to know more?
+
+Drop me a message on Teams or reach me via email.
+
+📧 abelisario ( at ) worldbank ( dot ) org

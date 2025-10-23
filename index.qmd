@@ -1,124 +1,216 @@
 ---
-title: "Solutions for data-driven publications"
-author: "Adriano Belisario"
+title: Branded documents and version control
+subtitle: Quarto & Git
 format:
-  revealjs: 
-    theme: moon
+  jdc-revealjs:
+    toc: true
+    toc-depth: 1
     incremental: true
-    slide-number: true
-    chalkboard: 
-      buttons: false
-    preview-links: auto
-    logo: img/jdc-logo.png
-    footer: Joint Data Center on Forced Displacement
+    navigation-mode: linear
 ---
 
-## Overview
+# Current challenges {.slide-blue}
 
-- Introduction to Quarto
+## Who has experienced...
 
-- Hands-on exercise with Quarto and Github
+- Opening multiple email attachments to find the "right" version of a report?
 
-- A glimpse of other data-driven publication formats
+- Seeing filenames like: `Report_Final_v3_FINAL_Jan_revised_ACTUAL.docx`?
 
-::: footer
-Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+- Being unable to answer "where did this number come from?"?
+
+- Spending hours reformatting a report to match brand standards?
+
+::: {.notes}
+How common are these challenges?
+
+How do you handle them?
+
+What do you think could be done to avoid such situations?
 :::
 
-# What is Quarto?
+## Messy version control systems
 
-## Quarto 
+- Multiple copies across email, shared drives, etc.
 
-The state-of-the-art of open-source solutions for publishing data-driven documents.
+- No centralized tracking of changes 
 
-Easily combine text, code, images, dynamic charts and more.
+- Potential for lost changes or extra work when people update documents offline or simultaneously
 
-Go from plain text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+## Replication/reproducibility crisis
 
-# How does it look?
+:::: {.columns}
 
-Let's see Quarto's main features on its website.
+::: {.column width="50%"}
 
-::: {style="text-align: center; margin-top: 1em"}
-[https://quarto.org/](https://quarto.org/){preview-link="true" style="text-align: center"}
+- Data analysis created through undocumented manual steps
+
+- Lack of transparency about methods used
+
+- Challenges in creating derived analyses
+
 :::
 
----
-
-![Example of a Quarto document](img/quarto_text.png)
-
-## Some use cases scenarios
-
-- Create reproducible reports for others (and for yourself!)
-
-- Combine with Github to write data analysis reports collaboratively
-
-- Automate the publication of periodic reports using data that changes over time
-
-- Create a report template and automate its application across different data sources
-
-- Create a website for technical documentation
-
-## Working with Quarto
-
-Edit Quarto documents using R Studio, Jupyter Notebooks or VS Code.
-
-Render to single files, such as PDF, DOCX and PPT, or use a web-based service to publish Quarto documents.
-
-Github, RPubs Posit (former R Studio Cloud) are common web-based alternatives. 
-
-
-# Hands-on exercise
-
-## Editing a Quarto document
-
-Let's edit a Quarto document and render it using R Studio.
-
-1. Clone the [Github repository](https://github.com/belisards/tutorial-ven-migration) to your local machine
-2. In R Studio: click on "File", then "Open Project" and locate the project
-3. Render the project
-3. Change the data source (line 69) for: `peru_host_mig.csv` or `chile_host_mig.csv` and render the project again
-4. Notice how the text rendered automatically changes 
-
-# Other data-driven publication formats
-
-## Scrollytelling
-
-For web-based presentations.
-
-::: {style="text-align: center; margin-top: 1em"}
-[Flourish presentation for the report on Venezuelan migration](https://public.flourish.studio/story/2250700/?full){target="_blank"}
+::: {.column width="50%"}
+![](img/nature-survey.jpg){width=80%}
 :::
 
-## Geo-based narratives
+::::
+ 
+## Formatting chaos
 
-Leveraging the power of maps to contextualize data.
+- Lack of visual consistency
 
-::: {style="text-align: center; margin-top: 1em" preview-link="true"}
-[Expulsions - forced displacements in the Ecuadorian Amazonia](https://documental.xyz/expulsions)
+- Hours spent on manual formatting
+
+- Brand dilution and diminished institutional recognition
+
+# Version control with Git {.slide-blue}
+
+## What is Git?
+
+Git is a professional version control system, mostly known through Github, its most famous application/platform.
+
+Originally designed for code development.
+
+It's been used to write any collaborative documents, such as reports, presentations and websites.
+
+## Key features
+
+Git provides three powerful features:
+
+- A "time machine" for text-based documents
+
+- An audit log of every change
+
+- A collaboration system so multiple people can work simultaneously without conflicts
+
+## Key concepts
+
+Let's see how it works by reviewing key concepts from Git/GitHub:
+
+- Organization
+
+- Repository
+
+- Commit
+
+- Branches
+
+::: {.notes}
+
+Organization is an institutional profile on Github
+
+Repository is a collection of files and folders for a specific project, with the full history of changes (commits). 
+
+Commit is a checkpoint with an explanation of what has changed
+
+Branches are parallel copies of a project used to test ideas without affecting the main version.
+
 :::
 
-## Customized stories
+# Creating documents with Quarto {.slide-blue}
 
-Put the readers in the center of your narrative. 
+## Quick review
 
-::: {style="text-align: center; margin-top: 1em" preview-link="true"}
-[Example on childcare from The Guardian](https://www.theguardian.com/society/ng-interactive/2023/nov/06/how-much-does-it-cost-for-you-to-raise-a-child){preview-link="true"}
+The state-of-the-art open-source solution for publishing data-driven documents.
+
+Easily combine text, code, images, charts and more.
+
+Quarto separates content from formatting. 
+
+Go from plain-text to reproducible reports, presentations (like this one), dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+
+## Advantages and challenges
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+✅ Pros
+
+- Professional, consistent output
+
+- Dynamic updates
+
+- Transparency and reproducibility
+
+
 :::
 
-## Extra resources
+::: {.column width="50%"}
 
-Boilerplate code to create Quarto presentations: [https://github.com/belisards/quarto_presentation/](https://github.com/belisards/quarto_presentation/)
+⚠️ Cons
 
-Quarto website: [https://quarto.org](https://quarto.org)
+- Learning curve
 
-Link for this presentation: [https://belisards.github.io/jdc-workshop](https://belisards.github.io/jdc-workshop)
+- No WYSIWYG editing
 
-Code of this presentation: [https://github.com/belisards/jdc-workshop](https://github.com/belisards/jdc-workshop)
+- Dependency on technical setup
 
+:::
 
-## Want to know more?
+::::
+
+::: {.notes}
+
+Professional, consistent output – Quarto produces polished PDFs, HTML pages, and presentations from a single source, ensuring brand and format consistency.
+
+Dynamic updates – When data or analysis changes, reports update automatically, reducing manual copy-paste errors.
+
+Transparency and reproducibility – The document keeps text, data, and visuals together, so others can see how results were generated.
+
+VS
+
+Learning curve – Non-technical users may find the markdown syntax and project setup unfamiliar at first.
+
+Limited WYSIWYG editing – no drag-and-drop or visual layout interface like Word or PowerPoint.
+
+Dependency on technical setup – Rendering documents requires installing Quarto and sometimes R or Python.
+
+:::
+
+# Branded templates
+
+## What is a Quarto template?
+
+- A **starter** that sets up a project structure, configuration file (`_quarto.yml`), theme, and example content
+
+- Ensures **brand consistency** and **repeatable** outputs (HTML, PDF, MS PowerPoint, etc.)
+
+## Examples from UNHCR 
+
+- [Web documents](https://github.com/unhcr-dataviz/quarto-html-unhcr)
+
+- [Slides](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr)
+
+## Hands-on showcase 
+
+- Install Quarto
+
+- Install an interface to facilitate editing
+-- VSCode
+-- RStudio
+
+- Download a template
+
+- Customize
+
+- Render/export
+
+## Using a template (GUI)
+
+- **RStudio**: *File → New Project → Quarto Project → From Template* → pick a template
+
+- **VS Code**: *Command Palette (Ctrl/Cmd+Shift+P) → Quarto: Create Project → From Template*
+
+- **Command-line interface**: ``quarto use template jointdatacenter/report-template``
+
+## Thank you! {.slide-blue}
+
+Want help?
 
 Drop me a message on Teams or reach me via email.
 
-📧 abelisario ( at ) worldbank ( dot ) org
+
+
