@@ -107,6 +107,8 @@ Difficult to track how users interact with a PDF
 
 # Use cases {.slide-blue .jdc-background}
 
+## Who's been using Git and Quarto
+
 **World Bank**: [Reproducible Research Repository](https://github.com/worldbank/wb-reproducible-research-repository)
 
 **UNHCR**: Quarto templates for [web documents](https://github.com/unhcr-dataviz/quarto-html-unhcr) and [presentations](https://github.com/unhcr-dataviz/quarto-revealjs-unhcr)
